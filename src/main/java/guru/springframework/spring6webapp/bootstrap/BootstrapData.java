@@ -35,7 +35,7 @@ public class BootstrapData implements CommandLineRunner {
         eric.setLastName("Evans");
 
         Book ddd = new Book();
-        ddd.setName("Domain Driven Design");
+        ddd.setTitle("Domain Driven Design");
         ddd.setIsbn("123456");
 
         Author ericSaved = authorRepository.save(eric);
@@ -46,7 +46,7 @@ public class BootstrapData implements CommandLineRunner {
         rod.setLastName("Johnson");
 
         Book noEJB = new Book();
-        noEJB.setName("J2EE Development without EJB");
+        noEJB.setTitle("J2EE Development without EJB");
         noEJB.setIsbn("54757585");
         // Test
         Author rodSaved = authorRepository.save(rod);
